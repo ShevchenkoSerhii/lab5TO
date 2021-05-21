@@ -89,6 +89,10 @@ private int fibNumber;
     public void setResult(String result) {
         this.result = result;
     }
+
+    public short FindSequenceLength() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 
     
