@@ -45,9 +45,13 @@ String text = "la text lol test";
         int actual4 = Lab4TextOperations.getWordsInTextNumber(text);
         int actual4Sec = Lab4TextOperations.getUniqueWordsInTextNumber(text);
         int actual4thir = Lab4TextOperations.getWordsWithForbiddenLetter(text, "e");
+        String actual4fo = Lab4TextOperations.MostPopularSequences(text, 1, 2);
+        int actual4Six = Lab4TextOperations.getWordsWithXLetters(text, 4);
         assertEquals(4, actual4);
         assertEquals(4, actual4Sec);
         assertEquals(2, actual4thir);
+        assertEquals("[te=2]", actual4fo);
+        assertEquals(2, actual4Six);
     }
     @Test
     void Laba5Test()
@@ -56,8 +60,10 @@ String text = "la text lol test";
         List<Short> list = Arrays.asList(new Short[]{100, 101, 102, 103, 104});
         int actual5 = Lab5.binarySearch(list, 101);
         int actual5Sec = Lab5.linearSearch(list, 101);
+        
         assertEquals(1, actual5);
         assertEquals(1, actual5Sec);
+        assertEquals(actual5, actual5Sec);
     }
     
     @Test
