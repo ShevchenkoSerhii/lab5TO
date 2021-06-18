@@ -88,6 +88,23 @@ String text = "la text lol test";
         assertEquals(result8, actual8Sec);
     }
 
+    
+    @Test
+    void ExamTest()
+    {
+        IR12.IR12.Exam.FormulaCalculations Exam = new IR12.IR12.Exam.FormulaCalculations();
+        float resultByMethod = Exam.formula((float)13.0);
+       List<Float> list = Arrays.asList(new Float[]{(float)35.0, (float)38.0});
+        List<Float> mathodResultlist = Exam.makeResultList(list, 1);
+        
+        List<Float> checkResultList = Arrays.asList(new Float[]{(float)0.029508196, (float)0.027108435});
+        
+       assertEquals((float)0.08411215, resultByMethod);
+       assertEquals(checkResultList, mathodResultlist);
+
+    }
+    
+    
     private int getFibNumber(int i) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
